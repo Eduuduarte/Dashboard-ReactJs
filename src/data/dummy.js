@@ -474,8 +474,9 @@ export const links = [
     title: 'Dashboard',
     links: [
       {
-        name: 'ecommerce',
+        name: 'e-commerce',
         icon: <FiShoppingBag />,
+        to: 'ecommerce'
       },
     ],
   },
@@ -484,16 +485,19 @@ export const links = [
     title: 'Pages',
     links: [
       {
-        name: 'orders',
+        name: 'ordens de serviços',
         icon: <AiOutlineShoppingCart />,
+        to: 'orders'
       },
       {
-        name: 'employees',
+        name: 'colaboradores',
         icon: <IoMdContacts />,
+        to: 'employees'
       },
       {
         name: 'customers',
         icon: <RiContactsLine />,
+        to: 'customers'
       },
     ],
   },
@@ -503,18 +507,22 @@ export const links = [
       {
         name: 'calendar',
         icon: <AiOutlineCalendar />,
+        to: 'calendar'
       },
       {
         name: 'kanban',
         icon: <BsKanban />,
+        to: 'kanban'
       },
       {
         name: 'editor',
         icon: <FiEdit />,
+        to: 'editor'
       },
       {
         name: 'color-picker',
         icon: <BiColorFill />,
+        to: 'color-picker'
       },
     ],
   },
@@ -524,35 +532,43 @@ export const links = [
       {
         name: 'line',
         icon: <AiOutlineStock />,
+        to: 'line',
       },
       {
         name: 'area',
         icon: <AiOutlineAreaChart />,
+        to: 'area'
       },
 
       {
         name: 'bar',
         icon: <AiOutlineBarChart />,
+        to: 'bar'
       },
       {
         name: 'pie',
         icon: <FiPieChart />,
+        to: 'pie'
       },
       {
         name: 'financial',
         icon: <RiStockLine />,
+        to: 'financial'
       },
       {
         name: 'color-mapping',
         icon: <BsBarChart />,
+        to: 'color-mapping'
       },
       {
         name: 'pyramid',
         icon: <GiLouvrePyramid />,
+        to: 'pyramid'
       },
       {
         name: 'stacked',
         icon: <AiOutlineBarChart />,
+        to: 'stacked'
       },
     ],
   },
