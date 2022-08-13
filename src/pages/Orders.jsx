@@ -7,10 +7,15 @@ import { Header } from '../components';
 class Orders extends React.Component {
   constructor () {
     super(...arguments);
-    this.toolbar=['PdfExport'];
+    this.toolbar=['PdfExport', 'ExcelExport'];
     this.toolbarClick = (args) => {
-      if(this.grid && args.item.id === 'grid_pdfexport') {
-        this.grid.pdfExport();
+      if(this.grid ) {
+        if(args.item.id === 'grid_pdfexport'){
+          this.grid.pdfExport();
+        }
+        if(args.item.id === 'grid_excelexport'){
+          this.grid.excelExport();
+        }
       }
     }
   }
@@ -18,13 +23,14 @@ render(){
   this.toolbarClick = this.toolbarClick.bind(this);
   return (
     <div className='m-2 md:m-10 p-2 md:p-10 bg-white rounded-3xl'>
-      <Header category="Page" title="Orders" />
+      <Header category="Page" title="Ordens de serviços" />
       <GridComponent
         id="grid"
         dataSource={ordersData}
         allowPaging
         allowSorting
         allowPdfExport={true}
+        allowExcelExport={true}
         toolbar={this.toolbar}
         toolbarClick={this.toolbarClick}
         ref={g=>this.grid = g}

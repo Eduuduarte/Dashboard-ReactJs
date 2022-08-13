@@ -393,12 +393,12 @@ export const LinePrimaryYAxis = {
 
 export const customersGrid = [
   { type: 'checkbox', width: '50' },
-  { headerText: 'Name',
+  { headerText: 'Nome',
     width: '150',
     template: customerGridImage,
     textAlign: 'Center' },
   { field: 'ProjectName',
-    headerText: 'Project Name',
+    headerText: 'Projeto',
     width: '150',
     textAlign: 'Center' },
   { field: 'Status',
@@ -409,24 +409,24 @@ export const customersGrid = [
     template: customerGridStatus },
   {
     field: 'Weeks',
-    headerText: 'Weeks',
+    headerText: 'Semanas',
     width: '100',
     format: 'C2',
     textAlign: 'Center' },
   { field: 'Budget',
-    headerText: 'Budget',
-    width: '100',
+    headerText: 'Orçamento',
+    width: '115',
     format: 'yMd',
     textAlign: 'Center' },
 
   { field: 'Location',
-    headerText: 'Location',
+    headerText: 'Localização',
     width: '150',
     textAlign: 'Center' },
 
   { field: 'CustomerID',
-    headerText: 'Customer ID',
-    width: '120',
+    headerText: 'ID',
+    width: '110',
     textAlign: 'Center',
     isPrimaryKey: true,
   },
@@ -434,7 +434,7 @@ export const customersGrid = [
 ];
 
 export const employeesGrid = [
-  { headerText: 'Employee',
+  { headerText: 'Colaborador',
     width: '150',
     template: gridEmployeeProfile,
     textAlign: 'Center' },
@@ -444,28 +444,28 @@ export const employeesGrid = [
     textAlign: 'Center',
   },
   { field: 'Title',
-    headerText: 'Designation',
+    headerText: 'Função',
     width: '170',
     textAlign: 'Center',
   },
-  { headerText: 'Country',
+  { headerText: 'País',
     width: '120',
     textAlign: 'Center',
     template: gridEmployeeCountry },
 
   { field: 'HireDate',
-    headerText: 'Hire Date',
-    width: '135',
+    headerText: 'Data de Contratação',
+    width: '140',
     format: 'yMd',
     textAlign: 'Center' },
 
   { field: 'ReportsTo',
-    headerText: 'Reports To',
+    headerText: 'Reporta a',
     width: '120',
     textAlign: 'Center' },
   { field: 'EmployeeID',
-    headerText: 'Employee ID',
-    width: '125',
+    headerText: 'ID',
+    width: '120',
     textAlign: 'Center' },
 ];
 
@@ -887,12 +887,6 @@ export const userProfileData = [
 
 export const ordersGrid = [
   {
-    headerText: 'Image',
-    template: gridOrderImage,
-    textAlign: 'Center',
-    width: '120',
-  },
-  {
     field: 'OrderItems',
     headerText: 'Item',
     width: '150',
@@ -900,13 +894,13 @@ export const ordersGrid = [
     textAlign: 'Center',
   },
   { field: 'CustomerName',
-    headerText: 'Customer Name',
+    headerText: 'Cliente',
     width: '150',
     textAlign: 'Center',
   },
   {
     field: 'TotalAmount',
-    headerText: 'Total Amount',
+    headerText: 'Custo Total',
     format: 'C2',
     textAlign: 'Center',
     editType: 'numericedit',
@@ -928,7 +922,7 @@ export const ordersGrid = [
 
   {
     field: 'Location',
-    headerText: 'Location',
+    headerText: 'Localização',
     width: '150',
     textAlign: 'Center',
   },
