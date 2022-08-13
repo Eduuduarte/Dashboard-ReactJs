@@ -30,7 +30,7 @@ const NavButtton = ({title, customFunc, icon, color, dotColor }) => (
 
 
 const Navbar = () => {
-  const { activeMenu, setActiveMenu, isClicked, setIsClicked, handleClick, screenSize, setScreenSize, currentColor } = useStateContext();
+  const { setActiveMenu, isClicked, handleClick, screenSize, setScreenSize, currentColor } = useStateContext();
 
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);
@@ -93,8 +93,8 @@ const Navbar = () => {
             src={avatar}
           />
           <p>
-            <span className='text-gray-400 text-14'>Hi, </span> {' '}
-            <span className='text-gray-400 font-bold ml-1 text-14'>Michael</span>
+            <span className='text-gray-400 text-14'>Olá, </span> {' '}
+            <span className='text-gray-400 font-bold ml-1 text-14'>Eduardo</span>
           </p>
           <MdKeyboardArrowDown className='text-gray-400 text-14'/>
         </div>

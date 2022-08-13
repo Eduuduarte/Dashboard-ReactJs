@@ -495,7 +495,7 @@ export const links = [
         to: 'employees'
       },
       {
-        name: 'customers',
+        name: 'Clientes',
         icon: <RiContactsLine />,
         to: 'customers'
       },
@@ -505,7 +505,7 @@ export const links = [
     title: 'Apps',
     links: [
       {
-        name: 'calendar',
+        name: 'calendário',
         icon: <AiOutlineCalendar />,
         to: 'calendar'
       },
@@ -632,18 +632,18 @@ export const chatData = [
 export const earningData = [
   {
     icon: <MdOutlineSupervisorAccount />,
-    amount: '39,354',
+    amount: '39.354',
     percentage: '-4%',
-    title: 'Customers',
+    title: 'Clientes',
     iconColor: '#03C9D7',
     iconBg: '#E5FAFB',
     pcColor: 'red-600',
   },
   {
     icon: <BsBoxSeam />,
-    amount: '4,396',
+    amount: '4.396',
     percentage: '+23%',
-    title: 'Products',
+    title: 'Produtos',
     iconColor: 'rgb(255, 244, 229)',
     iconBg: 'rgb(254, 201, 15)',
     pcColor: 'green-600',
@@ -652,17 +652,16 @@ export const earningData = [
     icon: <FiBarChart />,
     amount: '423,39',
     percentage: '+38%',
-    title: 'Sales',
+    title: 'Vendas',
     iconColor: 'rgb(228, 106, 118)',
     iconBg: 'rgb(255, 244, 229)',
-
     pcColor: 'green-600',
   },
   {
     icon: <HiOutlineRefresh />,
-    amount: '39,354',
+    amount: '39.354',
     percentage: '-12%',
-    title: 'Refunds',
+    title: 'Reembolsos',
     iconColor: 'rgb(0, 194, 146)',
     iconBg: 'rgb(235, 250, 242)',
     pcColor: 'red-600',
@@ -2141,7 +2140,6 @@ export const ordersData = [
   {
     OrderID: 10248,
     CustomerName: 'Vinet',
-
     TotalAmount: 32.38,
     OrderItems: 'Fresh Tomato',
     Location: 'USA',
@@ -2225,7 +2223,7 @@ export const ordersData = [
     Status: 'complete',
     StatusBg: '#8BE78B',
     ProductImage:
-      product4,
+      product8,
   },
   {
     OrderID: 845954,
@@ -3173,21 +3171,21 @@ export const ecomPieChartData = [
 export const stackedChartData = [
   [
     { x: 'Jan', y: 111.1 },
-    { x: 'Feb', y: 127.3 },
+    { x: 'Fev', y: 127.3 },
     { x: 'Mar', y: 143.4 },
-    { x: 'Apr', y: 159.9 },
-    { x: 'May', y: 159.9 },
+    { x: 'Abr', y: 159.9 },
+    { x: 'Mai', y: 159.9 },
     { x: 'Jun', y: 159.9 },
-    { x: 'July', y: 159.9 },
+    { x: 'Jul', y: 159.9 },
   ],
   [
     { x: 'Jan', y: 111.1 },
-    { x: 'Feb', y: 127.3 },
+    { x: 'Fev', y: 127.3 },
     { x: 'Mar', y: 143.4 },
-    { x: 'Apr', y: 159.9 },
-    { x: 'May', y: 159.9 },
+    { x: 'Abr', y: 159.9 },
+    { x: 'Mai', y: 159.9 },
     { x: 'Jun', y: 159.9 },
-    { x: 'July', y: 159.9 },
+    { x: 'Jul', y: 159.9 },
   ],
 ];
 
@@ -3196,7 +3194,7 @@ export const stackedCustomSeries = [
   { dataSource: stackedChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Budget',
+    name: 'Orçamento',
     type: 'StackingColumn',
     background: 'blue',
 
@@ -3205,7 +3203,7 @@ export const stackedCustomSeries = [
   { dataSource: stackedChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'Expense',
+    name: 'Despesas',
     type: 'StackingColumn',
     background: 'red',
 
