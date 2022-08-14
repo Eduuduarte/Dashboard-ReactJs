@@ -6,10 +6,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run start`
 
 
-#### using
+#### library using
 
 `npm install --legacy-peer-deps`
+`npm install tailwindcss@latest`
 
