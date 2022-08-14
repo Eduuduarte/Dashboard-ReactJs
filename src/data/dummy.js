@@ -1,14 +1,13 @@
 import React from 'react';
-import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
-import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
-import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
+import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart,  AiOutlineStock } from 'react-icons/ai';
+import { FiShoppingBag, FiEdit, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
+import { BsKanban, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
 import { BiColorFill } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
-import { RiContactsLine, RiStockLine } from 'react-icons/ri';
+import { RiContactsLine} from 'react-icons/ri';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { TiTick } from 'react-icons/ti';
-import { GiLouvrePyramid } from 'react-icons/gi';
 import { GrLocation } from 'react-icons/gr';
 import avatar from './avatar.jpg';
 import avatar2 from './avatar2.jpg';
@@ -403,19 +402,19 @@ export const customersGrid = [
     textAlign: 'Center' },
   { field: 'Status',
     headerText: 'Status',
-    width: '130',
+    width: '120',
     format: 'yMd',
     textAlign: 'Center',
     template: customerGridStatus },
   {
     field: 'Weeks',
     headerText: 'Semanas',
-    width: '100',
+    width: '110',
     format: 'C2',
     textAlign: 'Center' },
   { field: 'Budget',
     headerText: 'Orçamento',
-    width: '115',
+    width: '120',
     format: 'yMd',
     textAlign: 'Center' },
 
@@ -426,7 +425,7 @@ export const customersGrid = [
 
   { field: 'CustomerID',
     headerText: 'ID',
-    width: '110',
+    width: '100',
     textAlign: 'Center',
     isPrimaryKey: true,
   },
@@ -540,36 +539,6 @@ export const links = [
         to: 'area'
       },
 
-      {
-        name: 'bar',
-        icon: <AiOutlineBarChart />,
-        to: 'bar'
-      },
-      {
-        name: 'pie',
-        icon: <FiPieChart />,
-        to: 'pie'
-      },
-      {
-        name: 'financial',
-        icon: <RiStockLine />,
-        to: 'financial'
-      },
-      {
-        name: 'color-mapping',
-        icon: <BsBarChart />,
-        to: 'color-mapping'
-      },
-      {
-        name: 'pyramid',
-        icon: <GiLouvrePyramid />,
-        to: 'pyramid'
-      },
-      {
-        name: 'stacked',
-        icon: <AiOutlineBarChart />,
-        to: 'stacked'
-      },
     ],
   },
 ];

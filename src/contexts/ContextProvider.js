@@ -17,6 +17,9 @@ export const ContextProvider = ({ children }) => {
     const [currentMode, setCurrentMode] = useState('Light');
     const [themeSettings, setThemeSettings] = useState(false);
 
+    const cancelClick = (cancel) => {
+        setIsClicked( {...initialState, [cancel] : false });
+    }
 
     const handleClick = (clicked) => {
         setIsClicked( {...initialState, [clicked] : true});
@@ -42,7 +45,7 @@ export const ContextProvider = ({ children }) => {
             value={{
                 activeMenu, setActiveMenu, 
                 isClicked, setIsClicked,
-                handleClick,
+                handleClick, cancelClick,
                 screenSize, setScreenSize,
                 currentColor, 
                 currentMode, 
