@@ -11,6 +11,7 @@ In the project directory, you can run:
 
 #### library using
 
+`npm install react-router-dom`
 `npm install --legacy-peer-deps`
 `npm install tailwindcss@latest`
 
